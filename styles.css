@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 13px;
+}
+
+.headerright, .headerleft {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.headerright img {
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.headerright img:hover {
+    box-shadow: 0 0 2px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.headerright a, .headerleft a{
+    font-size: 13px;
+}
+
+a {
+    text-decoration: unset;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fa-grip-vertical {
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.fa-grip-vertical:hover {
+    background-color: rgba(211,211,211,0.5);
+    border-radius: 200px
+}
+
+
+
+
+
+
+/*-------Main--------*/
+
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80px;
+}
+
+main {
+    padding-top: 110px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 200.500px;
+}
+
+input {
+    background: transparent;
+    border: unset;
+    flex: 1;
+
+}
+
+.lowerbuttons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.lowerbuttons button {
+    background-color: rgba(211,211,211,0.2);
+    width: 125px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.lowerbuttons button:hover {
+    border: 1px solid darkgray;
+    cursor: pointer;
+    box-shadow: 0px 0px 0.5px gray;
+}
+
+.searchbar {
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    gap: 14px;
+    border: 1px solid grey;
+    padding: 14px;
+    border-radius: 24px;
+}
+
+.searchbar:hover {
+    border-color: transparent;
+    box-shadow: 0 0 3px black;
+}
+
+
+/*-----Icons-----*/
+
+.iconButtonContainer {
+    display: flex;
+    gap: 12px;
+}
+
+.iconButton {
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+    
+}
+
+
+/*-----Footer-----*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(211,211,211,0.5);
+    height: 150px;
+    justify-content: center;
+
+}
+
+footer > section {
+    padding: 14px;
+    
+}
+
+footer > section:last-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer section p {
+    font-size: 13px;
+}
+
+.footerLink {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.topSection {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 540px) {
+    footer > section:last-child {
+        flex-direction: row;
+    }
+}
